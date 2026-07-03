@@ -1,0 +1,21 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark rounded square background -->
+  <rect width="128" height="128" rx="28" ry="28" fill="#111111"/>
+
+  <!-- Geometric "A". Built with paths so it scales cleanly at all sizes
+       and stays crisp at 16px. -->
+  <path d="
+    M 64 26
+    L 100 102
+    L 86 102
+    L 78 84
+    L 50 84
+    L 42 102
+    L 28 102
+    Z
+    M 56 70
+    L 72 70
+    L 64 50
+    Z
+  " fill="#ffffff"/>
+</svg>
