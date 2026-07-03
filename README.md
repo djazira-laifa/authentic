@@ -115,7 +115,6 @@ For typical daily Pinterest browsing this is comfortable. Heavy users can upgrad
 * [x] Hide / blur / label modes
 * [x] Quota protection: visibility gating, caching, daily limit
 * [x] Built-in connection test and status alerts
-* [ ] Firefox port
 * [ ] Detection on pin detail pages
 * [ ] Per-board whitelisting (e.g. allow AI on `digital art` boards)
 * [ ] Multi language UI (FR, EN, ES)
@@ -134,23 +133,20 @@ If Pinterest changes its markup and pins stop being detected, the fix is usually
 
 ## About the author
 
-Built by **Djazira**, data analyst and builder based in Paris.
+Built by **Djazira LAIFA**.
 
-I write about depth, focus, and intentional living at [Depth / Au fond de soi](#) (Substack) and on [LinkedIn](#). This extension is part of a broader interest of mine: protecting human attention and authenticity in an increasingly synthetic web.
+This extension is part of a broader interest of mine: protecting human attention and authenticity in an increasingly synthetic web.
 
-* [LinkedIn](#)
-* [Substack: Depth / Au fond de soi](#)
 
 ## Support
 
 Authentic is and will remain 100% free and open source. If it is useful to you:
 
 * Star this repo. Free, takes two seconds, helps a lot.
-* [Buy me a coffee](#) on Ko-fi.
-* [Sponsor on GitHub](#).
+* [Buy me a matcha](#) 
 
 <div align="center">
 
-*Made with intention in Paris.*
+*Made with intention and with Claud's help <3.*
 
 </div>
