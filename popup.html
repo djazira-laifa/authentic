@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Authentic</h1>
+    <label class="switch">
+      <input type="checkbox" id="enabled-toggle">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <div class="alert" id="alert" style="display: none;"></div>
+
+  <section class="stats">
+    <div class="stat">
+      <div class="value" id="blocked-today">0</div>
+      <div class="label">blocked today</div>
+    </div>
+    <div class="stat">
+      <div class="value" id="blocked-total">0</div>
+      <div class="label">all time</div>
+    </div>
+  </section>
+
+  <section class="modes">
+    <p class="section-title">Treatment</p>
+    <div class="mode-options">
+      <button class="mode-btn" data-mode="hide">Hide</button>
+      <button class="mode-btn" data-mode="blur">Blur</button>
+      <button class="mode-btn" data-mode="label">Label</button>
+    </div>
+  </section>
+
+  <p class="quota" id="quota-line"></p>
+
+  <footer>
+    <a href="#" id="open-options">Settings</a>
+    <a href="https://github.com/[USERNAME]/authentic" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

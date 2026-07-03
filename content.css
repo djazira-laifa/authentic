@@ -1,0 +1,53 @@
+/* Hidden mode: the pin is removed visually but stays in the DOM. */
+.authentic-hidden {
+  display: none !important;
+}
+
+/* Blurred mode: the image is blurred, with a smooth transition for the
+   "Show anyway" reveal. */
+.authentic-blurred img {
+  filter: blur(24px) saturate(0.7);
+  transition: filter 0.25s ease;
+}
+
+/* The "AI" badge for label mode. */
+.authentic-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.78);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  backdrop-filter: blur(6px);
+}
+
+/* The "Show anyway" reveal button for blur mode. */
+.authentic-reveal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #111;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 11;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  transition: background 0.15s;
+}
+
+.authentic-reveal:hover {
+  background: #f5f5f5;
+}

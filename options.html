@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Authentic settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>Authentic settings</h1>
+
+    <section>
+      <h2>Sightengine credentials</h2>
+      <p class="help">
+        Authentic uses the Sightengine API to classify images. You need your
+        own API user and API secret. Sign up free at
+        <a href="https://dashboard.sightengine.com/signup" target="_blank" rel="noopener">dashboard.sightengine.com</a>,
+        then copy both values from the API keys section of your dashboard.
+        Both are stored only in your browser and sent directly to Sightengine,
+        never to anyone else.
+      </p>
+      <div class="field">
+        <input type="text" id="api-user" placeholder="API user">
+      </div>
+      <div class="field" style="margin-top: 8px;">
+        <input type="password" id="api-secret" placeholder="API secret">
+      </div>
+      <div class="field" style="margin-top: 8px;">
+        <button id="save-creds">Save</button>
+        <button id="test-connection" class="secondary">Test connection</button>
+      </div>
+      <p class="status" id="creds-status"></p>
+    </section>
+
+    <section>
+      <h2>Detection threshold</h2>
+      <p class="help">
+        How confident the classifier must be before a pin is flagged as AI.
+        Lower values catch more content but may flag some real photos as AI.
+        The default of 0.5 is balanced for Sightengine's scores.
+      </p>
+      <div class="field">
+        <input type="range" id="threshold" min="0.3" max="0.9" step="0.05" value="0.5">
+        <span id="threshold-value">0.50</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Daily check limit</h2>
+      <p class="help">
+        Maximum number of new images checked per day. Each check costs 5
+        Sightengine operations, and the free tier includes about 2000
+        operations per month (roughly 400 checks). The default of 100 per day
+        keeps you safe. Cached pins are always free and don't count.
+      </p>
+      <div class="field">
+        <input type="range" id="daily-limit" min="20" max="400" step="10" value="100">
+        <span id="daily-limit-value">100</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reset</h2>
+      <p class="help">
+        Clear the local cache of classified pins, or reset your block count
+        if you want to start fresh.
+      </p>
+      <div class="field">
+        <button id="clear-cache" class="secondary">Clear cache</button>
+        <button id="reset-stats" class="secondary">Reset stats</button>
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://github.com/[USERNAME]/authentic" target="_blank" rel="noopener">
+        GitHub
+      </a>
+      <span>v0.2.0</span>
+    </footer>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>
