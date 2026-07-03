@@ -12,7 +12,6 @@
 
 <br>
 
-![Demo](./assets/demo.gif)
 
 </div>
 
@@ -143,7 +142,7 @@ This extension is part of a broader interest of mine: protecting human attention
 Authentic is and will remain 100% free and open source. If it is useful to you:
 
 * Star this repo. Free, takes two seconds, helps a lot.
-* [Buy me a matcha](#) 
+* [Buy me a matcha] 
 
 <div align="center">
 
